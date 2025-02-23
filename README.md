@@ -11,6 +11,7 @@ on [Cogsworth](https://auth.teamsnap.com).
 
     use OmniAuth::Builder do
       provider :teamsnap, ENV['TEAMSNAP_KEY'], ENV['TEAMSNAP_SECRET']
+      # provider :teamsnap, Rails.application.credentials.teamsnap_key, Rails.application.credentials.teamsnap_secret # if using Rails' credentials file
     end
 
 ## Scopes
